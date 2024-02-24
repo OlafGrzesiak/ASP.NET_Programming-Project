@@ -1,0 +1,97 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Labolatorium 3-App/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/Labolatorium 3-App.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Labolatorium 3-App.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Labolatorium 3-App/1.0.0": {
+      "type": "project",
+      "path": "../Labolatorium 3-App/Labolatorium 3-App.csproj",
+      "msbuildProject": "../Labolatorium 3-App/Labolatorium 3-App.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Labolatorium 3-App >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\remo2\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\remo2\\Desktop\\3 semestr\\ASP .NET\\2 Laby 10.10.2023\\Labolatorium 9 - test\\Labolatorium 9 - test.csproj",
+      "projectName": "Labolatorium 9 - test",
+      "projectPath": "C:\\Users\\remo2\\Desktop\\3 semestr\\ASP .NET\\2 Laby 10.10.2023\\Labolatorium 9 - test\\Labolatorium 9 - test.csproj",
+      "packagesPath": "C:\\Users\\remo2\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\remo2\\Desktop\\3 semestr\\ASP .NET\\2 Laby 10.10.2023\\Labolatorium 9 - test\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\remo2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\remo2\\Desktop\\3 semestr\\ASP .NET\\2 Laby 10.10.2023\\Labolatorium 3-App\\Labolatorium 3-App.csproj": {
+              "projectPath": "C:\\Users\\remo2\\Desktop\\3 semestr\\ASP .NET\\2 Laby 10.10.2023\\Labolatorium 3-App\\Labolatorium 3-App.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project Labolatorium 3-App is not compatible with net6.0 (.NETCoreApp,Version=v6.0). Project Labolatorium 3-App supports: net7.0 (.NETCoreApp,Version=v7.0)",
+      "libraryId": "Labolatorium 3-App",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

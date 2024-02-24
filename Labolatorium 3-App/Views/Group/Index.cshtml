@@ -1,0 +1,87 @@
+﻿@model IEnumerable<Labolatorium_3_App.Models.Group>
+
+@{
+    Layout = "_Layout"; // Używamy głównego układu strony, jeśli istnieje
+}
+
+<style>
+    body {
+        text-align: center;
+        background-color: #F5F5F5; /* Jasne tło */
+        color: #333; /* Ciemniejszy tekst dla lepszej czytelności */
+    }
+
+    h1 {
+        color: #333;
+        margin-bottom: 20px; /* Dodajemy odstęp na dole dla lepszej struktury */
+    }
+
+    /* Przyciski teraz będą miały bardziej nowoczesny wygląd */
+    .btn {
+        background-color: #007BFF; /* Jasnoniebieski */
+        color: #black;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none; /* Usuwamy podkreślenie tekstu */
+        display: inline-block; /* Dla lepszego wyświetlania w linii */
+        margin: 0 10px; /* Dodajemy marginesy dla odstępu */
+    }
+
+    .btn-success { background-color: #28a745; color:#black; }
+    .btn-danger { background-color: #dc3545; color:#black; }
+
+    /* Kontener formularza teraz będzie bardziej responsywny i jasny */
+    .form-container {
+        background-color: #FFFFFF; /* Białe tło */
+        border-radius: 10px;
+        width: 80%; /* Szerokość dostosowana do większości ekranów */
+        margin: 20px auto; /* Wyśrodkowanie */
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtelniejszy cień */
+    }
+
+    /* Karty bibliotek również otrzymają nowy wygląd */
+    .library-card {
+        background-color: #FFFFFF; /* Białe tło */
+        border-radius: 10px;
+        margin: 20px auto; /* Centrowanie */
+        padding: 15px;
+        width: 90%; /* Szerokość dla lepszego wyświetlania */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lekki cień */
+    }
+
+    /* Styl dla obrazów w kartach bibliotek */
+    .library-card img {
+        max-width: 100%; /* Zapewniamy, że obrazy nie wyjdą poza kartę */
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 15px; /* Dodajemy odstęp */
+    }
+
+    /* Poprawiamy widoczność i styl linków */
+    .library-card a {
+        color: #007BFF; /* Kolor linków */
+        text-decoration: none; /* Usuwamy podkreślenie */
+    }
+
+    /* Dodajemy trochę przestrzeni dookoła linków dla lepszego efektu wizualnego */
+    .library-card a:not(:last-child) {
+        margin-right: 15px;
+    }
+</style>
+
+<h1>Group list</h1>
+<div class="form-container">
+    <a href="@Url.Action("Create", "Group")" class="btn btn-success">Add New Group</a>
+</div>
+
+@foreach (var library in Model)
+{
+    <div class="library-card">
+        <h2>@library.Name</h2>
+        <p>@library.Description</p>
+        <a href="@Url.Action("Edit", "Group", new { id = library.Id })">Edit</a>
+        <a href="@Url.Action("Delete", "Group", new { id = library.Id })" >Delete</a>
+    </div>
+}

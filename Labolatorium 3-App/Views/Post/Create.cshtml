@@ -1,0 +1,93 @@
+﻿@model Labolatorium_3_App.Models.Post
+
+@{
+}
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+<div class="container mt-5">
+    <h1>Dodaj post</h1>
+    <form asp-controller="Post" asp-action="Create" method="post">
+        <div class="mb-3">
+            <label asp-for="Content" class="form-label">Zawartość</label>
+            <textarea class="form-control" asp-for="Content" placeholder="Wprowadź zawartość dla postu"></textarea>
+            <span class="text-danger" asp-validation-for="Content"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Author" class="form-label">Autor</label>
+            <input class="form-control" asp-for="Author" placeholder="Wprowadź autora postu" />
+            <span class="text-danger" asp-validation-for="Author"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="PublicationDate" class="form-label">Data publikacji</label>
+            <input type="date" class="form-control" asp-for="PublicationDate" />
+            <span class="text-danger" asp-validation-for="PublicationDate"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Tags" class="form-label">Tagi</label>
+            <input class="form-control" asp-for="Tags" placeholder="Wprowadź tagi dla postu" />
+            <span class="text-danger" asp-validation-for="Tags"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Comments" class="form-label">Komentarze</label>
+            <textarea class="form-control" asp-for="Comments" placeholder="Dodaj komentarze do postu"></textarea>
+            <span class="text-danger" asp-validation-for="Comments"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="GroupId" class="form-label">Grupa</label>
+            <select class="form-control" asp-for="GroupId" asp-items="@Model.Groups"></select>
+        </div>
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Utwórz</button>
+            <button type="reset" class="btn btn-secondary">Wyczyść</button>
+        </div>
+    </form>
+</div>
+
+<style>
+    body {
+        background-color: #FFFFFF; /* Białe tło */
+        color: #000000; /* Czarny tekst */
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .form-label {
+        color: #000000; /* Czarny tekst dla etykiet */
+    }
+
+    .form-control {
+        background-color: #FFFFFF; /* Białe tło */
+        color: #000000; /* Czarny tekst */
+        border: 1px solid #CCCCCC; /* Lekko szary obramowanie dla kontrastu */
+        border-radius: 5px;
+    }
+
+        .form-control:focus {
+            background-color: #EEEEEE; /* Lekko szare tło przy fokusie */
+            color: #000000; /* Czarny tekst */
+        }
+
+    .btn-primary {
+        background-color: #000000; /* Czarne tło */
+        border: none;
+    }
+
+    .btn-secondary {
+        background-color: #CCCCCC; /* Szare tło */
+        border: none;
+    }
+
+    .text-danger {
+        color: #FF0000; /* Czerwony tekst dla walidacji */
+    }
+</style>

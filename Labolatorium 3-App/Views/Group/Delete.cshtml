@@ -1,0 +1,68 @@
+﻿@model Labolatorium_3_App.Models.Group
+
+@{
+    ViewData["Title"] = "Usuń Grupe";
+}
+
+<h2>Czy na pewno chcesz usunąć tę grupe?</h2>
+
+<div>
+    <h3>@Model.Name</h3>
+    <p>@Model.Description</p>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Usuń</button>
+    </form>
+</div>
+
+<div>
+    <a asp-action="Index">Anuluj i wróć do listy</a>
+</div>
+
+<style>
+    body {
+        text-align: center;
+        background-color: #FFFFFF; /* Białe tło */
+        color: #000000; /* Czarny tekst */
+    }
+
+    h1, h2 {
+        color: #000000;
+    }
+
+    .btn {
+        background-color: #000000; /* Czarne tło */
+        color: #FFFFFF; /* Biały tekst */
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        display: inline-block;
+        margin: 10px 0; /* Dodajemy marginesy dla odstępu */
+    }
+
+    .btn-danger {
+        background-color: #F44336; /* Czerwony */
+    }
+
+    a {
+        color: #000000; /* Czarny tekst dla linków */
+        text-decoration: none;
+        margin-top: 20px;
+        display: inline-block;
+    }
+
+        a:hover {
+            color: #555; /* Ciemniejszy odcień szarości */
+        }
+
+    div {
+        background-color: #FFFFFF; /* Białe tło dla kontenera */
+        border-radius: 10px;
+        width: 60%;
+        margin: 20px auto;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+</style>

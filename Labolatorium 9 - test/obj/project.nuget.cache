@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "m9DXPZXxFWfHou+y9a+UZMPrf0jMvfrUK9rIMgac5PI5OvAttwKAZLRURpW/IaADaRlfFZbIcZV/7MCaSTmG/w==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\remo2\\Desktop\\3 semestr\\ASP .NET\\2 Laby 10.10.2023\\Labolatorium 9 - test\\Labolatorium 9 - test.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project Labolatorium 3-App is not compatible with net6.0 (.NETCoreApp,Version=v6.0). Project Labolatorium 3-App supports: net7.0 (.NETCoreApp,Version=v7.0)",
+      "libraryId": "Labolatorium 3-App",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

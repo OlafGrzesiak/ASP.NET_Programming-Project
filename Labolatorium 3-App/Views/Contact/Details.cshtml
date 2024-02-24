@@ -1,0 +1,19 @@
+﻿@model Contact
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>Szczegółowe dane kontaktu @Model.Name </h1>
+
+<h4>Imię: <span class="text-danger"><strong>@Model.Name</strong></span></h4>
+<h4>E-mail: <span class="text-danger"><strong>@Model.Email</strong></span></h4>
+<h4>Telefon: <span class="text-danger"><strong>@Model.Phone</strong></span></h4>
+<h4>Data urodzenia: <span class="text-danger"><strong>@Model.Birth</strong></span></h4>
+<h4>Priorytet: <span class="text-danger"><strong>@Model.Priority.GetDisplayName()</strong></span></h4>
+<h4>Priorytet: <span class="text-danger"><strong>@Model.OrganizationName</strong></span></h4>
+
+
+
+
+

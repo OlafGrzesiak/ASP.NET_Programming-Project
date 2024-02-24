@@ -1,0 +1,48 @@
+﻿@model List<Contact>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h3>Lista kontaktów</h3>
+<a class="btn btn-primary" asp-controller="Contact" asp-action="Create">Dodaj kontakt</a>
+<a class="btn btn-primary" asp-controller="Contact" asp-action="CreateAPI">Dodaj kontakt API</a>
+
+@if (Model.Count > 0){
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model[0].Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model[0].Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model[0].Priority)
+        </th>
+        <th>
+            Akcje
+        </th>
+    </tr>
+    @foreach (var item in @Model)
+    {
+        <tr>
+            <td>
+                @item.Name
+            </td>
+            <td>
+                @item.Email
+            </td>
+            <td>
+                @item.Priority.GetDisplayName()
+            </td>
+            <td>
+                <a class="btn btn-outline-secondary" asp-controller="Contact" asp-action="Update" asp-route-id="@item.Id"> Edycja</a>
+                <a class="btn btn-outline-info" asp-controller="Contact" asp-action="Details" asp-route-id="@item.Id"> Szczegóły</a>
+                <a class="btn btn-outline-danger" asp-controller="Contact" asp-action="Delete" asp-route-id="@item.Id"> Usuń</a>
+            </td>
+
+        </tr>
+    }
+</table>
+}

@@ -1,0 +1,96 @@
+﻿@model Labolatorium_3_App.Models.Group
+
+@{
+    ViewData["Title"] = "Dodaj Nową Gruoę";
+}
+
+<h2>Dodaj Nową Bibliotekę</h2>
+
+<form asp-action="Create">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Description" class="control-label"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Utwórz</button>
+</form>
+
+<div>
+    <a asp-action="Index">Powrót do listy</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+<style>
+    body {
+        text-align: center;
+        background-color: #FFFFFF; /* Białe tło */
+        color: #000000; /* Czarny tekst */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h1, h2 {
+        color: #000000;
+    }
+
+    .btn-primary, .btn-danger, .btn-success {
+        background-color: #000000; /* Czarne tło dla wszystkich przycisków */
+        color: #FFFFFF; /* Biały tekst */
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none; /* Usuwamy podkreślenie tekstu */
+        display: inline-block; /* Dla lepszego wyświetlania w linii */
+        margin: 0 10px; /* Dodajemy marginesy dla odstępu */
+        cursor: pointer; /* Dodajemy kursor wskazujący */
+    }
+
+    /* Dostosowanie kolorów przycisków do akcji */
+    .btn-danger {
+        background-color: #F44336;
+    }
+    /* Czerwony dla akcji usunięcia */
+    .btn-success {
+        background-color: #4CAF50;
+    }
+    /* Zielony dla akcji zatwierdzenia */
+
+    .form-group {
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+        .form-group label {
+            display: block; /* Zapewnia lepsze wyrównanie */
+            color: #000000; /* Czarny tekst dla etykiet */
+            margin-bottom: 5px; /* Dodajemy odstęp */
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #CCCCCC; /* Jasnoszare obramowanie */
+            color: #000000; /* Czarny tekst */
+            background-color: #FFFFFF; /* Białe tło */
+        }
+
+    .form-container {
+        background-color: #F0F0F0; /* Lekko szare tło dla kontrastu */
+        border-radius: 10px;
+        overflow: hidden;
+        width: 60%;
+        margin: 20px auto;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Delikatny cień dla głębi */
+    }
+</style>

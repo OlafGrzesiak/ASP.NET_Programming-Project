@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Posts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFFFFF; /* White background */
+            color: #000000; /* Black text */
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .header {
+            color: #000000; /* Black */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 800px; /* Adjust for readability */
+            margin: 20px auto;
+            overflow: hidden;
+        }
+
+        .post {
+            background-color: #FFFFFF; /* White */
+            border: 1px solid #CCCCCC; /* Slight border */
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .post-meta {
+            color: #555;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column; /* Stack meta information vertically */
+        }
+
+            .post-meta span, .post-tags {
+                margin: 5px 0;
+            }
+
+                .post-tags span {
+                    display: inline-block;
+                    background-color: #EEEEEE; /* Light grey for tags */
+                    color: #000000;
+                    padding: 5px;
+                    border-radius: 5px;
+                    margin-right: 5px;
+                }
+
+        .btn {
+            background-color: #000000; /* Black */
+            color: #FFFFFF; /* White text */
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+            .btn:hover {
+                background-color: #333333; /* Darker */
+            }
+
+        .comments-toggle {
+            cursor: pointer;
+            color: #007bff; /* Blue link */
+        }
+
+        .comments {
+            display: none; /* Hidden by default */
+            margin-top: 10px;
+        }
+
+        .comment {
+            padding: 10px;
+            margin-top: 5px;
+            background-color: #F7F7F7; /* Very light grey */
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Blog Posts</h1>
+    </div>
+    <div class="container">
+        <a class="btn" asp-controller="Post" asp-action="Create">Add Post</a>
+        @if (Model.Posts.Count > 0)
+        {
+            @foreach (var post in Model.Posts)
+            {
+                <div class="post">
+                    <p>@post.Content</p>
+                    <div class="post-meta">
+                        <span>Autor: @post.Author</span>
+                        <span>Tagi: @post.Tags</span>
+                        <span>Komentarze: @post.Comments</span>
+                        <span>Data: @post.PublicationDate.ToString("dd-MM-yyyy")</span>
+                    </div>
+                    <a class="btn" asp-controller="Post" asp-action="Update" asp-route-id="@post.id">Edit</a>
+                    <a class="btn" asp-controller="Post" asp-action="Delete" asp-route-id="@post.id">Delete</a>
+                </div>
+            }
+        }
+        else
+        {
+            <p>No posts to display.</p>
+        }
+        <div class="pagination">
+            @if (Model.PageInfo.CurrentPage > 1)
+            {
+                <a asp-action="Index" asp-route-page="@(Model.PageInfo.CurrentPage - 1)">Previous</a>
+            }
+            @for (int i = 1; i <= Math.Ceiling((double)Model.PageInfo.TotalItems / Model.PageInfo.ItemsPerPage); i++)
+            {
+                if (i == Model.PageInfo.CurrentPage)
+                {
+                    <span class="current-page">@i</span>
+                }
+                else
+                {
+                    <a asp-action="Index" asp-route-page="@i">@i</a>
+                }
+            }
+            @if (Model.PageInfo.CurrentPage < Math.Ceiling((double)Model.PageInfo.TotalItems / Model.PageInfo.ItemsPerPage))
+            {
+                <a asp-action="Index" asp-route-page="@(Model.PageInfo.CurrentPage + 1)">Next</a>
+            }
+        </div>
+    </div>
+</body>
+</html>

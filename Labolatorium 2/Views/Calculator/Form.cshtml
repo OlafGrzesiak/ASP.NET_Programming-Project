@@ -1,0 +1,31 @@
+﻿@model Labolatorium_2.Models.Calculator
+
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-6">
+            <h2>Kalkulator</h2>
+            <form asp-action="Result" method="post">
+                <div class="mb-3">
+                    <label class="form-label" for="a">Liczba 1</label>
+                    <input class="form-control" type="number" name="X" step="0.00001" id="a" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="op">Operator</label>
+                    <select class="form-control" name="Operator" id="op">
+                        <option value="ADD">+</option>
+                        <option value="SUB">-</option>
+                        <option value="MUL">*</option>
+                        <option value="DIV">/</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="b">Liczba 2</label>
+                    <input class="form-control" type="number" name="Y" step="0.00001" id="b" />
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-primary" type="submit">Oblicz</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

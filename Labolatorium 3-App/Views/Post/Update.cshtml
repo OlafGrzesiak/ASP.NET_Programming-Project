@@ -1,0 +1,89 @@
+﻿@model Labolatorium_3_App.Models.Post
+
+@{
+}
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+<<style>
+     body {
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         background-color: #FFFFFF; /* Białe tło strony */
+         color: #000000; /* Czarny kolor tekstu */
+     }
+
+     .container {
+         max-width: 600px;
+         margin: 20px auto;
+         padding: 20px;
+         background-color: #F0F0F0; /* Lekko szare tło dla kontenera */
+         border-radius: 8px;
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     }
+
+     h4 {
+         color: #000000; /* Czarny kolor nagłówka "Edytuj post" */
+     }
+
+     label {
+         color: #000000; /* Czarny kolor etykiet formularza */
+         font-weight: bold; /* Dodajemy wytłuszczenie do etykiet */
+     }
+
+     .form-control {
+         background-color: #ffffff; /* Białe tło pola formularza */
+         color: #000000; /* Czarny kolor tekstu w polu formularza */
+         border: 1px solid #CCCCCC; /* Delikatne obramowanie */
+         border-radius: 5px;
+     }
+
+     .btn-primary {
+         background-color: #000000; /* Czarne tło przycisku "Zapisz" */
+         color: #ffffff; /* Biały kolor tekstu na przycisku "Zapisz" */
+         border: none;
+     }
+
+     .btn-secondary {
+         background-color: #666666; /* Ciemnoszare tło przycisku "Cofnij" */
+         color: #ffffff; /* Biały kolor tekstu na przycisku "Cofnij" */
+         border: none;
+     }
+
+         .btn-primary:hover, .btn-secondary:hover {
+             opacity: 0.9; /* Lekkie przyciemnienie przycisków przy najechaniu */
+         }
+
+     .text-danger {
+         color: #FF0000; /* Intensywny czerwony kolor dla komunikatów o błędach */
+     }
+</style>
+
+<div class="container mt-5">
+    <h4>Edit Post</h4>
+    <form asp-controller="Post" asp-action="Update" method="post">
+        <input type="hidden" asp-for="id" />
+        <div class="mb-3">
+            <label asp-for="Content">Content</label>
+            <textarea class="form-control" asp-for="Content"></textarea> <br />
+            <span class="text-danger" asp-validation-for="Content"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Tags">Tags</label>
+            <input class="form-control" asp-for="Tags" /> <br />
+            <span class="text-danger" asp-validation-for="Tags"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Comments">Comments</label>
+            <input class="form-control" asp-for="Comments" /> <br />
+            <span class="text-danger" asp-validation-for="Comments"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="GroupId">Group</label>
+            <select class="form-control" asp-for="GroupId" asp-items="@Model.Groups"></select>
+            <span class="text-danger" asp-validation-for="GroupId"></span>
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-primary" type="submit">Save</button>
+            <button class="btn btn-secondary" type="button" onclick="history.back();">Cancel</button>
+        </div>
+    </form>
+</div>

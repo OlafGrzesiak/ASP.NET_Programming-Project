@@ -1,0 +1,17 @@
+﻿@model Labolatorium_2.Models.Birth
+
+<form asp-action="Result" asp-controller="Birth" method="post">
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+        <span asp-validation-for="Name"></span>
+    </div>
+    <div>
+        <label asp-for="BirthDate"></label>
+        <input asp-for="BirthDate" type="date" />
+        <span asp-validation-for="BirthDate"></span>
+    </div>
+    <div>
+        <button type="submit">Zatwierdź</button>
+    </div>
+</form>

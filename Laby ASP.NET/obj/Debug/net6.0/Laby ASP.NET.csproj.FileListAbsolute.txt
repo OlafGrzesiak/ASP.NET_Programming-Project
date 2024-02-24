@@ -1,0 +1,31 @@
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\bin\Debug\net6.0\appsettings.json
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\bin\Debug\net6.0\Laby ASP.NET.staticwebassets.runtime.json
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\bin\Debug\net6.0\Laby ASP.NET.exe
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\bin\Debug\net6.0\Laby ASP.NET.deps.json
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\bin\Debug\net6.0\Laby ASP.NET.runtimeconfig.json
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\bin\Debug\net6.0\Laby ASP.NET.dll
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\bin\Debug\net6.0\Laby ASP.NET.pdb
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\obj\Debug\net6.0\Laby ASP.NET.csproj.AssemblyReference.cache
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\obj\Debug\net6.0\Laby ASP.NET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\obj\Debug\net6.0\Laby ASP.NET.AssemblyInfoInputs.cache
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\obj\Debug\net6.0\Laby ASP.NET.AssemblyInfo.cs
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\obj\Debug\net6.0\Laby ASP.NET.csproj.CoreCompileInputs.cache
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\obj\Debug\net6.0\Laby ASP.NET.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\obj\Debug\net6.0\Laby ASP.NET.RazorAssemblyInfo.cache
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\obj\Debug\net6.0\Laby ASP.NET.RazorAssemblyInfo.cs
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\obj\Debug\net6.0\staticwebassets\msbuild.Laby ASP.NET.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\obj\Debug\net6.0\staticwebassets\msbuild.build.Laby ASP.NET.props
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Laby ASP.NET.props
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Laby ASP.NET.props
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\obj\Debug\net6.0\scopedcss\bundle\Laby ASP.NET.styles.css
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\obj\Debug\net6.0\scopedcss\projectbundle\Laby ASP.NET.bundle.scp.css
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\obj\Debug\net6.0\Laby ASP.NET.dll
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\obj\Debug\net6.0\refint\Laby ASP.NET.dll
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\obj\Debug\net6.0\Laby ASP.NET.pdb
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\obj\Debug\net6.0\Laby ASP.NET.genruntimeconfig.cache
+C:\Users\remo2\Desktop\3 semestr\ASP .NET\2 Laby 10.10.2023\Laby ASP.NET\obj\Debug\net6.0\ref\Laby ASP.NET.dll

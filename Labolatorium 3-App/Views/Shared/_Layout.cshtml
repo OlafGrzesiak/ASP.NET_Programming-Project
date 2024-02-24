@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olaf Grzesiak - PostApplication</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/Labolatorium_3_App.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <style>
+        body {
+            background-color: #F0F2F5; /* Light grey background for the body */
+            color: #363537; /* Dark grey color for text */
+        }
+
+        footer {
+            background-color: #F0F2F5; /* Light grey background for the footer */
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            color: #363537; /* Dark grey color for text */
+        }
+
+        .loginpanel {
+            margin-left: auto; /* Keeps the element aligned to the right */
+        }
+
+        .navbar {
+            animation: fadeInOut 7s ease-in-out;
+            background-color: #FFFFFF !important; /* White background for the navbar */
+            color: #363537 !important; /* Dark grey color for navbar text */
+        }
+
+        .navbar-nav .nav-item .nav-link:hover {
+            background-color: #E2E6EA !important; /* Light blue for hover effect */
+            border-radius: 10px;
+        }
+
+        .border-bottom {
+            border-bottom: 1px solid #CCCCCC !important; /* Light grey border for bottom */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" >
+                    </a>
+                </li>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Post" asp-action="Index">Posts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Group" asp-action="Index">Groups</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <partial name="_LoginPartial" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <footer class="footer text-muted">
+        <div class="container">
+            &copy; @DateTime.Now.Year - Labolatorium_3_App - Olaf Grzesiak
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+<main role="main" class="pb-3">
+    @RenderBody()
+</main>
+</html>

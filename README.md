@@ -1,68 +1,35 @@
-Aplikacja Post
-Aplikacja Post to dynamiczny system zarządzania treścią (CMS), stworzony z wykorzystaniem ASP.NET MVC. Umożliwia użytkownikom tworzenie, edytowanie, usuwanie oraz przeglądanie postów w łatwy i intuicyjny sposób. Dzięki zaimplementowanym funkcjom grup, użytkownicy mogą także przypisywać posty do określonych kategorii, co pozwala na lepszą organizację treści.
+# Post Application
+The Post Application is a dynamic Content Management System (CMS) created using ASP.NET MVC. It allows users to easily create, edit, delete, and browse posts in an intuitive manner. The implemented group features enable users to assign posts to specific categories, improving content organization.
 
-Funkcje
-Tworzenie postów: Użytkownicy mogą tworzyć posty, dodając tytuł oraz treść.
-Edycja i usuwanie postów: Posty mogą być w łatwy sposób edytowane lub usuwane przez ich autorów.
-Przeglądanie postów: Wszystkie posty są dostępne do przeglądania dla użytkowników aplikacji.
-Grupy: Użytkownicy mogą tworzyć grupy i przypisywać do nich posty, co ułatwia zarządzanie treściami.
-Logowanie: Dostęp do aplikacji jest zabezpieczony systemem logowania. Przykładowe dane do logowania:
-Login: olaf@test.pl
-Hasło: olaf1234
+# Features:
 
-Technologie
-Aplikacja została zbudowana z wykorzystaniem:
+Creating Posts: Users can create posts by adding a title and content.
+Editing and Deleting Posts: Posts can be easily edited or deleted by their authors.
+Browsing Posts: All posts are available for browsing to application users.
+Groups: Users can create groups and assign posts to them, facilitating content management.
+Login: Access to the application is secured by a login system. Sample login credentials:
+
+Username: olaf@test.pl <br />
+Password: olaf1234
+
+# The application has been built using:
 
 ASP.NET MVC
-Entity Framework dla zarządzania bazą danych
-Bootstrap dla frontendu
-## Jak uruchomić
+Entity Framework for database management
+Bootstrap for the frontend
 
-1. Sklonuj repozytorium do swojego środowiska lokalnego.
-2. Otwórz rozwiązanie w Visual Studio.
-3. Uruchom migracje bazy danych, aby utworzyć niezbędne tabele.
-4. Uruchom aplikację za pomocą IIS Express.
+# How to Run:
 
-## Współpraca
+1. Clone the repository to your local environment.
+2. Open the solution in Visual Studio.
+3. Run database migrations to create necessary tables.
+4. Launch the application using IIS Express.
 
-Zachęcamy do współpracy przy projekcie. Jeśli masz jakieś pytania lub chcesz dołączyć do rozwoju aplikacji, prosimy o kontakt.
+# License:
 
-## Licencja
+The application is available under the MIT license. This means you are free to use, modify, and distribute the code while preserving information about the author.
 
-Aplikacja jest dostępna na licencji MIT. Oznacza to, że możesz swobodnie korzystać z kodu, modyfikować go oraz rozpowszechniać, zachowując informacje o autorze.
-# Aplikacja Post
 
-Aplikacja Post to dynamiczny system zarządzania treścią (CMS), stworzony z wykorzystaniem ASP.NET MVC. Umożliwia użytkownikom tworzenie, edytowanie, usuwanie oraz przeglądanie postów w łatwy i intuicyjny sposób. Dzięki zaimplementowanym funkcjom grup, użytkownicy mogą także przypisywać posty do określonych kategorii, co pozwala na lepszą organizację treści.
 
-## Funkcje
 
-- **Tworzenie postów**: Użytkownicy mogą tworzyć posty, dodając tytuł oraz treść.
-- **Edycja i usuwanie postów**: Posty mogą być w łatwy sposób edytowane lub usuwane przez ich autorów.
-- **Przeglądanie postów**: Wszystkie posty są dostępne do przeglądania dla użytkowników aplikacji.
-- **Grupy**: Użytkownicy mogą tworzyć grupy i przypisywać do nich posty, co ułatwia zarządzanie treściami.
-- **Logowanie**: Dostęp do aplikacji jest zabezpieczony systemem logowania. Przykładowe dane do logowania:
-  - **Login**: olaf@test.pl
-  - **Hasło**: olaf1234
 
-## Technologie
-
-Aplikacja została zbudowana z wykorzystaniem:
-
-- ASP.NET MVC
-- Entity Framework dla zarządzania bazą danych
-- Bootstrap dla frontendu
-
-## Jak uruchomić
-
-1. Sklonuj repozytorium do swojego środowiska lokalnego.
-2. Otwórz rozwiązanie w Visual Studio.
-3. Uruchom migracje bazy danych, aby utworzyć niezbędne tabele.
-4. Uruchom aplikację za pomocą IIS Express.
-
-## Współpraca
-
-Zachęcamy do współpracy przy projekcie. Jeśli masz jakieś pytania lub chcesz dołączyć do rozwoju aplikacji, prosimy o kontakt.
-
-## Licencja
-
-Aplikacja jest dostępna na licencji MIT. Oznacza to, że możesz swobodnie korzystać z kodu, modyfikować go oraz rozpowszechniać, zachowując informacje o autorze.
